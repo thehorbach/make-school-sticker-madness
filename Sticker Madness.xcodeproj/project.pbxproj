@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1166FA0E1D2318770036242E /* PhotoTakingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1166FA0D1D2318770036242E /* PhotoTakingHelper.swift */; };
 		3F77E4C71D22EFA500CF3F01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F77E4C61D22EFA500CF3F01 /* AppDelegate.swift */; };
 		3F77E4C91D22EFA500CF3F01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F77E4C81D22EFA500CF3F01 /* ViewController.swift */; };
 		3F77E4CC1D22EFA500CF3F01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F77E4CA1D22EFA500CF3F01 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1166FA0D1D2318770036242E /* PhotoTakingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTakingHelper.swift; sourceTree = "<group>"; };
 		3F77E4C31D22EFA500CF3F01 /* Sticker Madness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sticker Madness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F77E4C61D22EFA500CF3F01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F77E4C81D22EFA500CF3F01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1166FA0B1D2318550036242E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1166FA0D1D2318770036242E /* PhotoTakingHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		1166FA0C1D23185A0036242E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3F77E4C81D22EFA500CF3F01 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		3F77E4BA1D22EFA500CF3F01 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +72,9 @@
 		3F77E4C51D22EFA500CF3F01 /* Sticker Madness */ = {
 			isa = PBXGroup;
 			children = (
+				1166FA0B1D2318550036242E /* Helpers */,
+				1166FA0C1D23185A0036242E /* Controllers */,
 				3F77E4C61D22EFA500CF3F01 /* AppDelegate.swift */,
-				3F77E4C81D22EFA500CF3F01 /* ViewController.swift */,
 				3F77E4CA1D22EFA500CF3F01 /* Main.storyboard */,
 				3F77E4CD1D22EFA500CF3F01 /* Assets.xcassets */,
 				3F77E4CF1D22EFA500CF3F01 /* LaunchScreen.storyboard */,
@@ -136,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1166FA0E1D2318770036242E /* PhotoTakingHelper.swift in Sources */,
 				3F77E4C91D22EFA500CF3F01 /* ViewController.swift in Sources */,
 				3F77E4C71D22EFA500CF3F01 /* AppDelegate.swift in Sources */,
 			);
@@ -287,6 +307,7 @@
 				3F77E4D71D22EFA500CF3F01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
