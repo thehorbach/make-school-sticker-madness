@@ -20,7 +20,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zcJ-Er-AOW" userLabel="Image Stack View">
                                 <rect key="frame" x="0.0" y="95" width="600" height="505"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="YLj-3z-8cF">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="YLj-3z-8cF">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="405"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdm-wm-mmt">
@@ -39,29 +39,41 @@
                                     <constraint firstItem="YLj-3z-8cF" firstAttribute="leading" secondItem="zcJ-Er-AOW" secondAttribute="leading" id="0DR-bl-Y5d"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="UjZ-Ul-q9E" userLabel="Button Stack View">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="UjZ-Ul-q9E" userLabel="Button Stack View">
                                 <rect key="frame" x="10" y="30" width="580" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUF-ia-ayA">
-                                        <rect key="frame" x="0.0" y="0.0" width="177" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="126" height="60"/>
                                         <state key="normal" image="eyeglasses1"/>
+                                        <connections>
+                                            <action selector="eyeButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pqz-av-UJB"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rO2-2a-Mwd">
-                                        <rect key="frame" x="202" y="0.0" width="176" height="60"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rO2-2a-Mwd">
+                                        <rect key="frame" x="151" y="0.0" width="127" height="60"/>
                                         <state key="normal" image="hat1"/>
+                                        <connections>
+                                            <action selector="hatButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="svk-z1-aNX"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCg-EA-5Eu">
-                                        <rect key="frame" x="403" y="0.0" width="177" height="60"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAr-FP-6AO">
+                                        <rect key="frame" x="303" y="0.0" width="126" height="60"/>
+                                        <state key="normal" image="bowtie"/>
+                                        <connections>
+                                            <action selector="bowTieButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aLB-Wa-q5g"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCg-EA-5Eu">
+                                        <rect key="frame" x="454" y="0.0" width="126" height="60"/>
                                         <state key="normal" image="mustache2"/>
+                                        <connections>
+                                            <action selector="mustacheButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hqn-zw-WmH"/>
+                                        </connections>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="qCg-EA-5Eu" firstAttribute="width" secondItem="UUF-ia-ayA" secondAttribute="width" id="bt8-he-pbX"/>
-                                    <constraint firstItem="rO2-2a-Mwd" firstAttribute="width" secondItem="UUF-ia-ayA" secondAttribute="width" id="eV0-W7-A1v"/>
-                                </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="UjZ-Ul-q9E" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="3bp-ZQ-2sx"/>
                             <constraint firstItem="zcJ-Er-AOW" firstAttribute="top" secondItem="UjZ-Ul-q9E" secondAttribute="bottom" constant="5" id="7wO-uj-NIH"/>
@@ -83,10 +95,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bowtie" width="200" height="200"/>
         <image name="camera" width="2400" height="2400"/>
         <image name="eyeglasses1" width="342" height="144"/>
         <image name="hat1" width="332" height="205"/>
-        <image name="home" width="38" height="36"/>
         <image name="mustache2" width="542" height="200"/>
+        <image name="person-placeholder" width="500" height="500"/>
     </resources>
 </document>
